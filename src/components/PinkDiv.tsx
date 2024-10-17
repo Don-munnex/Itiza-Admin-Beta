@@ -2,9 +2,8 @@ import React from "react";
 import BkDog from "/src/Images/BkDog.png";
 import dogpaw from "/src/Images/dogpaw.png";
 import {CustomWalletMultiButton} from "./connection"
-import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import WalletContextProvider from "./connection";
-import * as connection from "./connection";
+
 
 
 
