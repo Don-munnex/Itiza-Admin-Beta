@@ -22,7 +22,7 @@ export const CustomWalletMultiButton = () => {
  
     
     // Conditionally render button text based on connection state
-    const Buttontext = wallet.connected ? null : 'Phantom';
+    const Buttontext = wallet.connected ? null : 'Connect';
 
     return (
         <WalletMultiButton style={connectNavBarStyles}>
