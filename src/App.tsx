@@ -9,7 +9,7 @@ import WalletContextProvider from './components/connection'
 function App() {
   return (
     <>
-      <div className='min-h-screen w-auto'> 
+      <div className='min-h-screen'> 
         <WalletContextProvider>
           <PinkDiv />
           <WriteUp />
