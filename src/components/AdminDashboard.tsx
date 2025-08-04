@@ -49,7 +49,7 @@ const DashboardOverview = () => {
     const fetchData = async () => {
       try {
         const token = localStorage.getItem("authToken");
-        const res = await axios.get("https://itiza-admin.vercel.app/api/dashboard", {
+        const res = await axios.get("https://itiza-admin1.vercel.app/api/dashboard", {
           headers: {
             Authorization: `Bearer ${token}`
           }
@@ -156,10 +156,10 @@ const Dashboard = ({ setIsLoggedIn }: { setIsLoggedIn: (status: boolean) => void
         endpoint = "items";
         break;
       case "Orders":
-        endpoint = "orders";
+        endpoint = "web3orders";
         break;
       case "Customers":
-        endpoint = "users";
+        endpoint = "web3users";
         break;
       default:
         return;
@@ -169,7 +169,7 @@ const Dashboard = ({ setIsLoggedIn }: { setIsLoggedIn: (status: boolean) => void
     const token = localStorage.getItem("authToken");
     
     axios
-      .get(`https://itiza-admin.vercel.app/api/${endpoint}`, {
+      .get(`https://itiza-admin1.vercel.app/api/${endpoint}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
