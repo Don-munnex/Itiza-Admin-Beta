@@ -19,7 +19,7 @@ const SignUpPage: React.FC = () => {
 
   const sendOtpToEmail = async (email: string, otp: string) => {
     try {
-      const res = await fetch(`https://itiza-admin.vercel.app/api/sendOTP`, {
+      const res = await fetch(`https://itiza-admin1.vercel.app/api/sendOTP`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, otp }),
@@ -71,7 +71,7 @@ const SignUpPage: React.FC = () => {
     setError("");
 
     try {
-      const response = await fetch(`https://itiza-admin.vercel.app/api/signUP`, {
+      const response = await fetch(`https://itiza-admin1.vercel.app/api/auth`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

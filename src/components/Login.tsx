@@ -23,7 +23,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ setIsLoggedIn }) => {
     }
 
     try {
-      const res = await fetch("https://itiza-admin.vercel.app/api/login", {
+      const res = await fetch("https://itiza-admin1.vercel.app/api/loginuser", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
